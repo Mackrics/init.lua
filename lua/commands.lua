@@ -1,0 +1,7 @@
+vim.cmd("command R terminal 'R'")
+vim.cmd("command RScript tabe | terminal Rscript %")
+vim.cmd("command LSession SessionManager load_session")
+vim.cmd("command VR botright vsplit | terminal 'R'")
+vim.cmd("command QuartoCheck tabe | terminal quarto check")
+vim.cmd("command QuartoRender tabe %| terminal quarto render %")
+vim.cmd("command QuartoPreview  tabe %| terminal quarto preview ./")
