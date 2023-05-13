@@ -10,6 +10,7 @@ set.scrolloff = 8
 set.spell = true
 set.spelllang = 'en_us,sv'
 set.shellcmdflag = '-ic'
+vim.cmd('autocmd TermOpen * setlocal nonumber norelativenumber')
 
 -- Aliases ---------------------------------------------------------------------
 vim.cmd("let MYVIMRC = '.config/nvim/init.vim'")
