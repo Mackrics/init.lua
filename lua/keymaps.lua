@@ -37,6 +37,5 @@ vim.keymap.set("n", "<C-j>", "}j")
 vim.keymap.set("n", "qp", "<Cmd>QuartoPreview<Cr>")
 vim.keymap.set("n", "qr", "<Cmd>QuartoRender<Cr>")
 vim.keymap.set("n", "qc", "<Cmd>QuartoCheck<Cr>")
-
-
-
+vim.keymap.set("n", "ff", "<Cmd>FindFile<Cr>")
+vim.keymap.set("n", "fc", "<Cmd>FindContent<Cr>")
