@@ -14,3 +14,6 @@ vim.cmd('autocmd TermOpen * setlocal nonumber norelativenumber')
 
 -- Aliases ---------------------------------------------------------------------
 vim.cmd("let MYVIMRC = '.config/nvim/init.vim'")
+
+-- Skeletons -------------------------------------------------------------------
+vim.cmd("autocmd BufNewFile *.sh 0r ~/.config/nvim/skeletons/skeleton.sh")
