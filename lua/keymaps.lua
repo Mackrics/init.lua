@@ -26,7 +26,7 @@ vim.keymap.set("n", "<leader>s", "<Plug>SlimeSendCell")
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
 
 -- Miscellaneous ---------------------------------------------------------------
-vim.keymap.set("n", "<leader>ls", "<Cmd> ls<CR>")
+vim.keymap.set("n", "<leader>ls", "<Cmd>Telescope buffers<CR>")
 vim.keymap.set("n", "G", "Gzz")
 
 -- Scrolling -------------------------------------------------------------------
