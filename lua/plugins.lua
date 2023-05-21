@@ -2,38 +2,54 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- Send stuff to terminal
   use 'jpalardy/vim-slime'
 
+  -- Manage files
   use 'preservim/nerdtree'
 
+  -- dependency of a lot of packages
   use 'nvim-lua/plenary.nvim'
 
+  -- File search
   use 'nvim-telescope/telescope.nvim'
 
+  -- Color theme
   use 'catppuccin/nvim'
 
+  -- Pandoc syntax highlightning
   use 'vim-pandoc/vim-pandoc-syntax'
 
-	use 'Shatur/neovim-session-manager'
+  -- Easily change sessions
+  use 'Shatur/neovim-session-manager'
 
   use 'stevearc/dressing.nvim'
 
-	use 'quarto-dev/quarto-vim'
+  -- Quarto syntax highlightning
+  use 'quarto-dev/quarto-vim'
 
-	use 'nvim-lualine/lualine.nvim'
+  -- Custom line
+  use 'nvim-lualine/lualine.nvim'
 
-	use 'tpope/vim-fugitive'
+  -- Git plugin
+  use 'tpope/vim-fugitive'
 
-	use "L3MON4D3/LuaSnip"
+  -- Use snippets
+  use "L3MON4D3/LuaSnip"
 
+  -- Autocomplete
   use 'hrsh7th/nvim-cmp'
 	
-	use 'hrsh7th/cmp-path'
+  -- Autocomplete Directories
+  use 'hrsh7th/cmp-path'
 
-	use 'hrsh7th/cmp-nvim-lsp'
+  -- Autocomplete Languageserver
+  use 'hrsh7th/cmp-nvim-lsp'
 
-	use 'neovim/nvim-lspconfig'
+ -- LSP configuration
+  use 'neovim/nvim-lspconfig'
 
+  -- Autocomplete snippets
   use 'saadparwaiz1/cmp_luasnip'
 
 end)
