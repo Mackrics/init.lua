@@ -10,8 +10,6 @@ return require('packer').startup(function(use)
 
   use 'nvim-telescope/telescope.nvim'
 
-  use 'vimwiki/vimwiki'
-
   use 'catppuccin/nvim'
 
   use 'vim-pandoc/vim-pandoc-syntax'

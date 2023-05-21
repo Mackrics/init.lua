@@ -149,6 +149,3 @@ vim.cmd.colorscheme "catppuccin"
 vim.cmd('highlight ColorColumn ctermbg=black')
 vim.cmd('highlight CursorLine cterm=none ctermbg=none ctermfg=none guibg=none guifg=none')
 vim.cmd('highlight CursorLineNr guifg=#FAE3B0')
-
-vim.g.vimwiki_list = {{path = '~/zettelkasten/', syntax = 'markdown', ext = '.md'}}
-vim.g.vimwiki_markdown_link_ext = 1
