@@ -26,7 +26,8 @@ vim.keymap.set("n", "<leader>s", "<Plug>SlimeSendCell")
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
 
 -- Miscellaneous ---------------------------------------------------------------
-vim.keymap.set("n", "<leader>ls", "<Cmd>Telescope buffers<CR>")
+vim.keymap.set("n", "<leader>ls", "<Cmd>LSession<CR>")
+vim.keymap.set("n", "ls", "<Cmd>Telescope buffers<CR>")
 vim.keymap.set("n", "G", "Gzz")
 
 -- Scrolling -------------------------------------------------------------------
@@ -39,3 +40,6 @@ vim.keymap.set("n", "qr", "<Cmd>QuartoRender<Cr>")
 vim.keymap.set("n", "qc", "<Cmd>QuartoCheck<Cr>")
 vim.keymap.set("n", "ff", "<Cmd>FindFile<Cr>")
 vim.keymap.set("n", "fc", "<Cmd>FindContent<Cr>")
+vim.keymap.set("n", "gs", "<Cmd>Git status<Cr>")
+vim.keymap.set("n", "ga", "<Cmd>Git add %<Cr>")
+vim.keymap.set("n", "gA", "<Cmd>Git add -a<Cr>")
