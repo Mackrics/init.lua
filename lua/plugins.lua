@@ -52,5 +52,8 @@ return require('packer').startup(function(use)
   -- Autocomplete snippets
   use 'saadparwaiz1/cmp_luasnip'
 
+  -- zen mode focused coding
+  use 'folke/zen-mode.nvim'
+
 end)
 
