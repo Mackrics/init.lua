@@ -1,4 +1,5 @@
 vim.cmd("command R terminal 'R'")
+vim.cmd("command Python terminal 'python'")
 vim.cmd("command RScript tabe | terminal Rscript %")
 vim.cmd("command LSession SessionManager load_session")
 vim.cmd("command VR botright vsplit | terminal 'R'")
