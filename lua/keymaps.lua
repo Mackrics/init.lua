@@ -35,7 +35,8 @@ vim.keymap.set("n", "<C-k>", "{k")
 vim.keymap.set("n", "<C-j>", "}j")
 
 -- Commands --------------------------------------------------------------------
-vim.keymap.set("n", "<leader>qp", "<Cmd>QuartoPreview<Cr>")
+vim.keymap.set("n", "<leader>qpp", "<Cmd>QuartoPreviewProject<Cr>")
+vim.keymap.set("n", "<leader>qpf", "<Cmd>QuartoPreviewFile<Cr>")
 vim.keymap.set("n", "<leader>qr", "<Cmd>QuartoRender<Cr>")
 vim.keymap.set("n", "<leader>qc", "<Cmd>QuartoCheck<Cr>")
 vim.keymap.set("n", "<leader>ff", "<Cmd>FindFile<Cr>")
