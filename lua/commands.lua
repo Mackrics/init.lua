@@ -4,7 +4,7 @@ vim.cmd("command RScript tabe | terminal Rscript %")
 vim.cmd("command LSession SessionManager load_session")
 vim.cmd("command VR botright vsplit | terminal 'R'")
 vim.cmd("command QuartoCheck tabe | terminal quarto check")
-vim.cmd("command QuartoRender tabe %| terminal quarto render %")
+vim.cmd("command QuartoRenderFile tabe %| terminal quarto render %")
 vim.cmd("command QuartoRenderProject tabe %| terminal quarto render ./")
 vim.cmd("command QuartoPreviewProject  tabe %| terminal quarto preview ./")
 vim.cmd("command QuartoPreviewFile  tabe %| terminal quarto preview %")
@@ -17,3 +17,14 @@ vim.cmd("command RunApp tabe % | terminal R --slave -e \"shiny::runApp(launch.br
 vim.cmd("command FindContent Telescope live_grep")
 vim.cmd("command FindFile Telescope find_files")
 vim.cmd("command BufferDeleteAll %bd|e#")
+
+function r_pipe()
+  pos = vim.api.nvim_win_get_cursor(0)
+  local row = pos[1]
+  local col = pos[2]
+  local line = vim.api.nvim_get_current_line()
+  local nline = line:sub(0, col) .. '|>' .. line:sub(col + 1)
+  vim.api.nvim_set_current_line(nline)
+  new_pos = {row, col + 2}
+  vim.api.nvim_win_set_cursor(0, new_pos)
+end
