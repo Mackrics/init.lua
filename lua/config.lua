@@ -99,7 +99,7 @@ require'lspconfig'.r_language_server.setup{
 }
 
 require'lspconfig'.ltex.setup{
-	cmd = {"/home/mackan/scripts/ltex-ls-16.0.0/bin/./ltex-ls"},
+	cmd = {"/home/markus/scripts/ltex-ls-16.0.0/bin/./ltex-ls"},
 	filetypes = {"markdown", "quarto", "mail"}
 }
 
