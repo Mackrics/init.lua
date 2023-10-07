@@ -1,7 +1,8 @@
 -- Miscellaneous ---------------------------------------------------------------
 local set = vim.opt
+set.shiftwidth = 2
 set.tabstop = 8
-set.shiftwidth = 8
+set.softtabstop = 2
 set.colorcolumn = '80'
 set.mouse = a
 set.number = true
