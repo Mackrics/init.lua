@@ -51,5 +51,6 @@ vim.keymap.set("n", "<leader>gA", "<Cmd>Git add -a<Cr>")
 vim.keymap.set("n", "<leader>gc", "<Cmd>Git commit<Cr>")
 vim.keymap.set("n", "<leader>gd", "<Cmd>Git diff %<Cr>")
 vim.keymap.set("n", "<leader>ec", "<Cmd>echo&channel<Cr>")
+vim.keymap.set("n", "<leader>s", "<Cmd>NeoSlimeSendLine<Cr>")
+vim.keymap.set("v", "<leader>s", "<Cmd>NeoSlimeSendVisualSelection<Cr>")
 vim.api.nvim_set_keymap('i','<C-b>','<cmd>lua r_pipe()<cr>',{})
-
