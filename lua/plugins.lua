@@ -15,11 +15,11 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 
-  -- my plugin
-  "mackrics/slime.nvim",
- 
-   -- Send stuff to terminal
-  "jpalardy/vim-slime",
+  -- send stuff to terminal
+  "mackrics/neoslime",
+
+  -- syntax highlightning
+  'nvim-treesitter/nvim-treesitter',
  
    -- Manage files
   "preservim/nerdtree",
