@@ -52,8 +52,23 @@ vim.keymap.set("n", "<leader>gc",  "<Cmd>Git commit<Cr>")
 vim.keymap.set("n", "<leader>gd",  "<Cmd>Git diff %<Cr>")
 vim.keymap.set("n", "<leader>ec",  "<Cmd>echo&channel<Cr>")
 vim.keymap.set("n", "<C-c><C-c>",  "vip:'<,'> NeoSlimeSendVisualSelection<Cr>")
-vim.keymap.set("n", "<leader>s",  "?^#.*----<Cr>jV/^#.*----<Cr>k:'<,'> NeoSlimeSendVisualSelection<Cr>}")
 vim.keymap.set({"n", "i"}, "<C-cr>", "<Cmd>NeoSlimeSendLine<Cr>")
+vim.keymap.set({"n", "i"}, "<C-h>", "<Cmd>NeoSlimeSendLine<Cr>")
 vim.keymap.set("v", "<C-cr>",  ":'<,'> NeoSlimeSendVisualSelection<Cr>")
 vim.keymap.set({"n", "v"}, "<leader>ec", "<Cmd>NeoSlimeEdit<Cr>")
 vim.api.nvim_set_keymap('i','<cs-m>','<cmd>lua r_pipe()<cr>',{})
+vim.api.nvim_set_keymap('i','<C-l>','<cmd>lua r_pipe()<cr>',{})
+
+vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+  pattern = {".R"},
+  callback = function(ev)
+    vim.keymap.set("n", "<leader>s",  "?^#.*----<Cr>jV/^#.*----<Cr>k:'<,'> NeoSlimeSendVisualSelection<Cr>}")
+  end
+})
+
+vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+  pattern = {"*.md", ".*qmd"},
+  callback = function(ev)
+    vim.keymap.set("n", "<leader>s",  "?^```<Cr>jV/^```<Cr>k:'<,'> NeoSlimeSendVisualSelection<Cr>}")
+  end
+})
