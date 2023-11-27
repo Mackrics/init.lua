@@ -56,8 +56,8 @@ vim.keymap.set({"n", "i"}, "<C-cr>", "<Cmd>NeoSlimeSendLine<Cr>")
 vim.keymap.set({"n", "i"}, "<C-h>", "<Cmd>NeoSlimeSendLine<Cr>")
 vim.keymap.set("v", "<C-cr>",  ":'<,'> NeoSlimeSendVisualSelection<Cr>")
 vim.keymap.set({"n", "v"}, "<leader>ec", "<Cmd>NeoSlimeEdit<Cr>")
-vim.api.nvim_set_keymap('i','<cs-m>','<cmd>lua r_pipe()<cr>',{})
 vim.api.nvim_set_keymap('i','<C-l>','<cmd>lua r_pipe()<cr>',{})
+vim.api.nvim_set_keymap('i','<C-v>','<cmd>lua r_in()<cr>',{})
 
 vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
   pattern = {".R"},
