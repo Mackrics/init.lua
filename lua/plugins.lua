@@ -33,16 +33,10 @@ local plugins = {
    -- Color theme
   "catppuccin/nvim",
  
-  -- Pandoc syntax highlightning
-  "vim-pandoc/vim-pandoc-syntax",
- 
    -- Easily change sessions
   "Shatur/neovim-session-manager",
  
   "stevearc/dressing.nvim",
- 
-   -- Quarto syntax highlightning
-  "quarto-dev/quarto-vim",
  
    -- Custom line
   "nvim-lualine/lualine.nvim",

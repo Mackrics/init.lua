@@ -6,7 +6,7 @@
   "dressing.nvim": { "branch": "master", "commit": "8b7ae53d7f04f33be3439a441db8071c96092d19" },
   "lazy.nvim": { "branch": "main", "commit": "96584866b9c5e998cbae300594d0ccfd0c464627" },
   "lualine.nvim": { "branch": "master", "commit": "2248ef254d0a1488a72041cfb45ca9caada6d994" },
-  "neoslime": { "branch": "main", "commit": "c57058dabb50dc72fe1e2ad800dfbdb0f2ad3a15" },
+  "neoslime": { "branch": "main", "commit": "97be68e4b896f55a658ab41d7a146ec15e613e34" },
   "neovim-session-manager": { "branch": "master", "commit": "68dde355a4304d83b40cf073f53915604bdd8e70" },
   "nerdtree": { "branch": "master", "commit": "9ec27d45a863aeb82fea56cebcb8a75a4e369fc9" },
   "nvim": { "branch": "main", "commit": "919d1f786338ebeced798afbf28cd085cd54542a" },
@@ -14,9 +14,7 @@
   "nvim-lspconfig": { "branch": "master", "commit": "694aaec65733e2d54d393abf80e526f86726c988" },
   "nvim-treesitter": { "branch": "master", "commit": "0791b5ebb590a2d44e20640c52679df1fc42e8ab" },
   "plenary.nvim": { "branch": "master", "commit": "55d9fe89e33efd26f532ef20223e5f9430c8b0c0" },
-  "quarto-vim": { "branch": "master", "commit": "216247339470794e74a5fda5e5515008d6dc1057" },
   "telescope.nvim": { "branch": "master", "commit": "e90fdba90d29d0284cefa4ef5833ef3e56602057" },
   "vim-fugitive": { "branch": "master", "commit": "46eaf8918b347906789df296143117774e827616" },
-  "vim-pandoc-syntax": { "branch": "master", "commit": "16939cda184ff555938cc895cc62477c172997f9" },
   "zen-mode.nvim": { "branch": "main", "commit": "50e2e2a36cc97847d9ab3b1a3555ba2ef6839b50" }
 }
