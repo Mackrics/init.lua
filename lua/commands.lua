@@ -39,3 +39,15 @@ function r_in()
   new_pos = {row, col + 4}
   vim.api.nvim_win_set_cursor(0, new_pos)
 end
+
+
+function r_arrow()
+  pos = vim.api.nvim_win_get_cursor(0)
+  local row = pos[1]
+  local col = pos[2]
+  local line = vim.api.nvim_get_current_line()
+  local nline = line:sub(0, col) .. '<-' .. line:sub(col + 1)
+  vim.api.nvim_set_current_line(nline)
+  new_pos = {row, col + 2}
+  vim.api.nvim_win_set_cursor(0, new_pos)
+end
