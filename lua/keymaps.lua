@@ -3,10 +3,6 @@ vim.g.mapleader = " "
 
 -- Manage windows --------------------------------------------------------------
 vim.keymap.set("n", "<leader>v", vim.cmd.vsplit)
-vim.keymap.set("n", "<leader>h", "<Cmd> wincmd h<CR>")
-vim.keymap.set("n", "<leader>j", "<Cmd> wincmd j<CR>")
-vim.keymap.set("n", "<leader>k", "<Cmd> wincmd k<CR>")
-vim.keymap.set("n", "<leader>l", "<Cmd> wincmd l<CR>")
 vim.keymap.set("n", "L", "<Cmd> tabn <CR>")
 vim.keymap.set("n", "H", "<Cmd> tabp <CR>")
 vim.keymap.set("n", "<leader>x", "<Cmd> bd <CR>")
@@ -27,8 +23,6 @@ vim.keymap.set("n", "<leader>s", "<Plug>SlimeSendCell")
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
 
 -- Miscellaneous ---------------------------------------------------------------
-vim.keymap.set("n", "<leader>ls", "<Cmd>LSession<CR>")
-vim.keymap.set("n", "ls", "<Cmd>Telescope buffers<CR>")
 vim.keymap.set("n", "G", "Gzz")
 
 -- Scrolling -------------------------------------------------------------------
@@ -42,6 +36,8 @@ vim.keymap.set("n", "<leader>qrp", "<Cmd>QuartoRenderProject<Cr>")
 vim.keymap.set("n", "<leader>qrf", "<Cmd>QuartoRenderFile<Cr>")
 vim.keymap.set("n", "<leader>qc",  "<Cmd>QuartoCheck<Cr>")
 vim.keymap.set("n", "<leader>ff",  "<Cmd>FindFile<Cr>")
+vim.keymap.set("n", "<leader>fb", "<Cmd>Telescope buffers<CR>")
+vim.keymap.set("n", "<leader>fs", "<Cmd>LSession<CR>")
 vim.keymap.set("n", "<leader>fc",  "<Cmd>FindContent<Cr>")
 vim.keymap.set("n", "<leader>gs",  "<Cmd>Telescope git_status<Cr>")
 vim.keymap.set("n", "<leader>gb",  "<Cmd>Telescope git_branches<Cr>")
