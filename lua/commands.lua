@@ -17,6 +17,7 @@ vim.cmd("command RunApp tabe % | terminal R --slave -e \"shiny::runApp(launch.br
 vim.cmd("command FindContent Telescope live_grep")
 vim.cmd("command FindFile Telescope find_files")
 vim.cmd("command BufferDeleteAll %bd|e#")
+vim.cmd("command CleanWorkoutLog %s/\\d\\(\\.\\d\\|\\)$//")
 
 function r_pipe()
   pos = vim.api.nvim_win_get_cursor(0)
