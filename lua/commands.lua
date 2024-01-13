@@ -18,6 +18,24 @@ vim.cmd("command FindContent Telescope live_grep")
 vim.cmd("command FindFile Telescope find_files")
 vim.cmd("command BufferDeleteAll %bd|e#")
 vim.cmd("command CleanWorkoutLog %s/\\d\\(\\.\\d\\|\\)$//")
+ 
+function daily(path, extension)
+    local daily = os.date('%Y-%m-%d') .. extension
+    vim.cmd(':e ' .. path .. daily)
+end
+
+vim.api.nvim_create_user_command(
+  'DailyJournal',
+  "lua daily('~/zettelkasten/journal/daily/', '.md')",
+  {}
+)
+
+vim.api.nvim_create_user_command(
+  'DailyWorkout',
+  "lua daily('~/zettelkasten/workout-log/powerlifting/004_cycle/', '.tsv')",
+  {}
+)
+
 
 function r_pipe()
   pos = vim.api.nvim_win_get_cursor(0)
