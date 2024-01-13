@@ -24,6 +24,11 @@ function daily(path, extension)
     vim.cmd(':e ' .. path .. daily)
 end
 
+function weekly(path, extension)
+    local weekly = os.date('%Y-%W') .. extension
+    vim.cmd(':e ' .. path .. weekly)
+end
+
 vim.api.nvim_create_user_command(
   'DailyJournal',
   "lua daily('~/zettelkasten/journal/daily/', '.md')",
@@ -33,6 +38,12 @@ vim.api.nvim_create_user_command(
 vim.api.nvim_create_user_command(
   'DailyWorkout',
   "lua daily('~/zettelkasten/workout-log/powerlifting/004_cycle/', '.tsv')",
+  {}
+)
+
+vim.api.nvim_create_user_command(
+  'WeeklyReview',
+  "lua weekly('~/zettelkasten/journal/weekly/', '.md')",
   {}
 )
 
