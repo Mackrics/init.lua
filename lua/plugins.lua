@@ -37,6 +37,8 @@ local plugins = {
   "Shatur/neovim-session-manager",
  
   "stevearc/dressing.nvim",
+
+  "stevearc/oil.nvim",
  
    -- Custom line
   "nvim-lualine/lualine.nvim",
