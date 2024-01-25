@@ -176,6 +176,18 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
+require("telescope").setup {
+  extensions = {
+    file_browser = {
+      hijack_netrw = true
+    }
+  }
+}
+
+require("telescope").load_extension "file_browser"
+
+require('neogit').setup {}
+
 vim.cmd.colorscheme "catppuccin"
 vim.cmd('highlight ColorColumn ctermbg=black')
 vim.cmd('highlight CursorLine cterm=none ctermbg=none ctermfg=none guibg=none guifg=none')

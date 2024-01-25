@@ -21,9 +21,6 @@ local plugins = {
   -- syntax highlightning
   'nvim-treesitter/nvim-treesitter',
  
-   -- Manage files
-  "preservim/nerdtree",
- 
    -- dependency of a lot of packages
   "nvim-lua/plenary.nvim",
  
@@ -38,13 +35,12 @@ local plugins = {
  
   "stevearc/dressing.nvim",
 
-  "stevearc/oil.nvim",
+  "nvim-telescope/telescope-file-browser.nvim",
  
    -- Custom line
   "nvim-lualine/lualine.nvim",
- 
-   -- Git plugin
-  "tpope/vim-fugitive",
+  
+  "NeogitOrg/neogit",
  
    -- Use snippets
   "L3MON4D3/LuaSnip",
@@ -63,8 +59,5 @@ local plugins = {
  
    -- Autocomplete snippets
   "saadparwaiz1/cmp_luasnip",
- 
-   -- zen mode focused coding
-   "folke/zen-mode.nvim"
 }
 require("lazy").setup(plugins, opts)

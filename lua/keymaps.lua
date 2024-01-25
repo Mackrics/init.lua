@@ -17,8 +17,16 @@ vim.keymap.set("n", "<leader><", "<Cmd> vertical resize -5<CR>")
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 -- Plugin settings -------------------------------------------------------------
-vim.keymap.set("n", "<leader>n", "<Cmd> NERDTreeToggle<CR>")
-vim.keymap.set("n", "<leader>N", "<Cmd> NERDTree<CR>")
+vim.keymap.set("n", "<leader>n", "<Cmd> Telescope file_browser<CR>")
+
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>N",
+  ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
+  { noremap = true }
+)
+
+
 vim.keymap.set("n", "<leader>s", "<Plug>SlimeSendCell")
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
 
@@ -42,10 +50,7 @@ vim.keymap.set("n", "<leader>fc",  "<Cmd>FindContent<Cr>")
 vim.keymap.set("n", "<leader>gs",  "<Cmd>Telescope git_status<Cr>")
 vim.keymap.set("n", "<leader>gb",  "<Cmd>Telescope git_branches<Cr>")
 vim.keymap.set("n", "<leader>gl",  "<Cmd>Telescope git_commits<Cr>")
-vim.keymap.set("n", "<leader>ga",  "<Cmd>Git add %<Cr>")
-vim.keymap.set("n", "<leader>gA",  "<Cmd>Git add -a<Cr>")
-vim.keymap.set("n", "<leader>gc",  "<Cmd>Git commit<Cr>")
-vim.keymap.set("n", "<leader>gd",  "<Cmd>Git diff %<Cr>")
+vim.keymap.set("n", "<leader>gn",  "<Cmd>Neogit<Cr>")
 vim.api.nvim_set_keymap('i','<C-l>','<cmd>lua r_pipe()<cr>',{})
 vim.api.nvim_set_keymap('i','<C-v>','<cmd>lua r_in()<cr>',{})
 vim.api.nvim_set_keymap('i','<C-b>','<cmd>lua r_arrow()<cr>',{})
