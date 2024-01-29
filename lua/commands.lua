@@ -14,8 +14,6 @@ vim.cmd("command ShowMarkDown !viewmd %")
 vim.cmd("command GitHubPush !githubinit && git push")
 vim.cmd("command GitHubPull !githubinit && git pull")
 vim.cmd("command RunApp tabe % | terminal R --slave -e \"shiny::runApp(launch.browser = TRUE)\"")
-vim.cmd("command FindContent Telescope live_grep")
-vim.cmd("command FindFile Telescope find_files")
 vim.cmd("command BufferDeleteAll %bd|e#")
 vim.cmd("command CleanWorkoutLog %s/\\d\\(\\.\\d\\|\\)$//")
  
