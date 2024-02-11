@@ -11,6 +11,8 @@ require("plugins")
 require("commands")
 
 -- Load Configurations ---------------------------------------------------------
+require("telescope-conf")
+require("treesitter-conf")
 require("config")
 
 -- Load snippets ---------------------------------------------------------------
