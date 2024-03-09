@@ -17,3 +17,7 @@ require("config")
 
 -- Load snippets ---------------------------------------------------------------
 require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/snippets/"})
+
+require("neoslime").setup({
+  chosen_channel = nil
+})

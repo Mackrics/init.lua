@@ -9,6 +9,7 @@ vim.cmd("command QuartoPreviewProject  tabe %| terminal quarto preview ./")
 vim.cmd("command QuartoPreviewFile  tabe %| terminal quarto preview %")
 vim.cmd("command ShowSpaceTable !column -s ' ' -t  < %")
 vim.cmd("command ShowTabTable !column -s '\t' -t  < %")
+vim.cmd("command GoRun !go run %")
 vim.cmd("command ShowMarkDown !viewmd %")
 vim.cmd("command GitHubPush !githubinit && git push")
 vim.cmd("command GitHubPull !githubinit && git pull")
@@ -34,7 +35,7 @@ vim.api.nvim_create_user_command(
 
 vim.api.nvim_create_user_command(
   'DailyWorkout',
-  "lua daily('~/zettelkasten/workout-log/powerlifting/004_cycle/', '.tsv')",
+  "lua daily('~/zettelkasten/workout-log/powerlifting/005_cycle/', '.tsv')",
   {}
 )
 
