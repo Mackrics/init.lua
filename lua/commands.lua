@@ -7,10 +7,7 @@ vim.cmd("command QuartoRenderFile tabe %| terminal quarto render %")
 vim.cmd("command QuartoRenderProject tabe %| terminal quarto render ./")
 vim.cmd("command QuartoPreviewProject  tabe %| terminal quarto preview ./")
 vim.cmd("command QuartoPreviewFile  tabe %| terminal quarto preview %")
-vim.cmd("command ShowSpaceTable !column -s ' ' -t  < %")
-vim.cmd("command ShowTabTable !column -s '\t' -t  < %")
 vim.cmd("command GoRun !go run %")
-vim.cmd("command ShowMarkDown !viewmd %")
 vim.cmd("command GitHubPush !githubinit && git push")
 vim.cmd("command GitHubPull !githubinit && git pull")
 vim.cmd("command RunApp tabe % | terminal R --slave -e \"shiny::runApp(launch.browser = TRUE)\"")
@@ -45,37 +42,30 @@ vim.api.nvim_create_user_command(
   {}
 )
 
-
-function r_pipe()
+function create_macro(text)
   pos = vim.api.nvim_win_get_cursor(0)
   local row = pos[1]
   local col = pos[2]
   local line = vim.api.nvim_get_current_line()
-  local nline = line:sub(0, col) .. '|>' .. line:sub(col + 1)
+  local nline = line:sub(0, col) .. text .. line:sub(col + 1)
+  length = string.len(text)
   vim.api.nvim_set_current_line(nline)
-  new_pos = {row, col + 2}
+  new_pos = {row, col + length}
   vim.api.nvim_win_set_cursor(0, new_pos)
+end
+
+function qmd_bullet()
+  create_macro('(@) ')
+end
+
+function r_pipe()
+  create_macro('|>')
 end
 
 function r_in()
-  pos = vim.api.nvim_win_get_cursor(0)
-  local row = pos[1]
-  local col = pos[2]
-  local line = vim.api.nvim_get_current_line()
-  local nline = line:sub(0, col) .. '%in%' .. line:sub(col + 1)
-  vim.api.nvim_set_current_line(nline)
-  new_pos = {row, col + 4}
-  vim.api.nvim_win_set_cursor(0, new_pos)
+  create_macro('%in% ')
 end
 
-
 function r_arrow()
-  pos = vim.api.nvim_win_get_cursor(0)
-  local row = pos[1]
-  local col = pos[2]
-  local line = vim.api.nvim_get_current_line()
-  local nline = line:sub(0, col) .. '<-' .. line:sub(col + 1)
-  vim.api.nvim_set_current_line(nline)
-  new_pos = {row, col + 2}
-  vim.api.nvim_win_set_cursor(0, new_pos)
+  create_macro('<-')
 end

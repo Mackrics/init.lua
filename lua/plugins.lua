@@ -28,7 +28,7 @@ local plugins = {
 
   -- syntax highlightning
   'nvim-treesitter/nvim-treesitter',
- 
+
    -- dependency of a lot of packages
   "nvim-lua/plenary.nvim",
  
