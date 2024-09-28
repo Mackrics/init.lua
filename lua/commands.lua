@@ -11,6 +11,7 @@ vim.cmd("command GoRun !go run %")
 vim.cmd("command GitHubPush !githubinit && git push")
 vim.cmd("command GitHubPull !githubinit && git pull")
 vim.cmd("command RunApp tabe % | terminal R --slave -e \"shiny::runApp(launch.browser = TRUE)\"")
+vim.cmd("command LitedownRender tabe % | terminal R --slave -e \"litedown::fuse_site()\"")
 vim.cmd("command BufferDeleteAll %bd|e#")
 vim.cmd("command CleanWorkoutLog %s/\\d\\(\\.\\d\\|\\)$//")
  
@@ -68,4 +69,8 @@ end
 
 function r_arrow()
   create_macro('<-')
+end
+
+function r_dt()
+  create_macro('_[]')
 end

@@ -38,9 +38,6 @@ local plugins = {
    -- Color theme
   "catppuccin/nvim",
  
-   -- Easily change sessions
-  "Shatur/neovim-session-manager",
- 
   "stevearc/dressing.nvim",
 
   "nvim-telescope/telescope-file-browser.nvim",
@@ -49,6 +46,9 @@ local plugins = {
   "nvim-lualine/lualine.nvim",
   
   "NeogitOrg/neogit",
+   -- Easily change sessions
+  "Shatur/neovim-session-manager",
+  "tpope/vim-fugitive",
  
    -- Use snippets
   "L3MON4D3/LuaSnip",
@@ -67,5 +67,9 @@ local plugins = {
  
    -- Autocomplete snippets
   "saadparwaiz1/cmp_luasnip",
+
+  "David-Kunz/gen.nvim",
+
+  "https://github.com/FabijanZulj/blame.nvim"
 }
 require("lazy").setup(plugins, opts)

@@ -13,6 +13,10 @@ require("commands")
 -- Load Configurations ---------------------------------------------------------
 require("telescope-conf")
 require("treesitter-conf")
+require("blame-conf")
+require("neogit-conf")
+require("sessionmanager-conf")
+require("gen-conf")
 require("config")
 
 -- Load snippets ---------------------------------------------------------------
