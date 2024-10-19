@@ -70,6 +70,8 @@ local plugins = {
 
   "David-Kunz/gen.nvim",
 
-  "https://github.com/FabijanZulj/blame.nvim"
+  "FabijanZulj/blame.nvim",
+  
+  "lewis6991/gitsigns.nvim"
 }
 require("lazy").setup(plugins, opts)

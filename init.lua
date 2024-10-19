@@ -17,6 +17,7 @@ require("blame-conf")
 require("neogit-conf")
 require("sessionmanager-conf")
 require("gen-conf")
+require("gitsigns-conf")
 require("config")
 
 -- Load snippets ---------------------------------------------------------------
