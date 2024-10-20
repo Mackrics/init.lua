@@ -68,8 +68,6 @@ local plugins = {
    -- Autocomplete snippets
   "saadparwaiz1/cmp_luasnip",
 
-  "David-Kunz/gen.nvim",
-
   "lewis6991/gitsigns.nvim"
 }
 require("lazy").setup(plugins, opts)
