@@ -22,13 +22,7 @@ require('lspconfig').r_language_server.setup{
 
 require('lspconfig').zk.setup{}
 
-require('lspconfig').harper_ls.setup {
-  settings = {
-    ["harper-ls"] = {
-      userDictPath = "~/dict.txt"
-    }
-  },
-}
+require('lspconfig').harper_ls.setup {}
 
 vim.diagnostic.config {
   virtual_text = false,
