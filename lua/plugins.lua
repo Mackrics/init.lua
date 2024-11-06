@@ -11,8 +11,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-
-
 local plugins = {
 
   -- send stuff to terminal
@@ -24,7 +22,6 @@ local plugins = {
     require('neoslime')
   end
 },
-
 
   -- syntax highlightning
   'nvim-treesitter/nvim-treesitter',
@@ -40,15 +37,17 @@ local plugins = {
  
   "stevearc/dressing.nvim",
 
+  -- File manager
   "nvim-telescope/telescope-file-browser.nvim",
  
    -- Custom line
   "nvim-lualine/lualine.nvim",
   
+  -- git manager
   "NeogitOrg/neogit",
+
    -- Easily change sessions
   "Shatur/neovim-session-manager",
-  "tpope/vim-fugitive",
  
    -- Use snippets
   "L3MON4D3/LuaSnip",
@@ -68,6 +67,10 @@ local plugins = {
    -- Autocomplete snippets
   "saadparwaiz1/cmp_luasnip",
 
-  "lewis6991/gitsigns.nvim"
+  -- git inline
+  "lewis6991/gitsigns.nvim",
+
+  -- zettelkasten
+  "zk-org/zk-nvim"
 }
 require("lazy").setup(plugins, opts)
