@@ -16,16 +16,19 @@ cmp.setup{
 }
 
 -- Languageserver --------------------------------------------------------------
-require'lspconfig'.r_language_server.setup{
+require('lspconfig').r_language_server.setup{
 	filetypes = {"r", "rmd", "quarto"}
 }
 
-require'lspconfig'.ltex.setup{
-	cmd = {"/home/markus/scripts/ltex-ls-16.0.0/bin/./ltex-ls"},
-	filetypes = {"markdown", "quarto", "mail"}
-}
+require('lspconfig').zk.setup{}
 
-require'lspconfig'.zk.setup{}
+require('lspconfig').harper_ls.setup {
+  settings = {
+    ["harper-ls"] = {
+      userDictPath = "~/dict.txt"
+    }
+  },
+}
 
 vim.diagnostic.config {
   virtual_text = false,
