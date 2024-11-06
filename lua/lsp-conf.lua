@@ -17,7 +17,7 @@ cmp.setup{
 
 -- Languageserver --------------------------------------------------------------
 require('lspconfig').r_language_server.setup{
-	filetypes = {"r", "rmd", "quarto"}
+  filetypes = {"r", "rmd", "quarto"}
 }
 
 require('lspconfig').zk.setup{}
