@@ -22,7 +22,13 @@ require('lspconfig').r_language_server.setup{
 
 require('lspconfig').zk.setup{}
 
-require('lspconfig').harper_ls.setup {}
+require('lspconfig').harper_ls.setup {
+  settings = {
+    ["harper-ls"] = {
+      userDictPath = "~/.config/nvim/spell/en.utf-8.add"
+    }
+  }
+}
 
 vim.diagnostic.config {
   virtual_text = false,
