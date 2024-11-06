@@ -16,6 +16,8 @@ require("treesitter-conf")
 require("neogit-conf")
 require("sessionmanager-conf")
 require("gitsigns-conf")
+require("zk-conf")
+require("lsp-conf")
 require("config")
 
 -- Load snippets ---------------------------------------------------------------
