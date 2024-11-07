@@ -26,5 +26,5 @@ vim.cmd("let MYVIMRC = '.config/nvim/init.vim'")
 
 -- Skeletons -------------------------------------------------------------------
 vim.cmd("autocmd BufNewFile *.sh 0r ~/.config/nvim/.skeletons/skeleton.sh")
-vim.cmd("autocmd BufNewFile ~/zettelkasten/journal/daily/*.md 0r  ~/zettelkasten/.skeletons/daily.md")
-vim.cmd("autocmd BufNewFile ~/zettelkasten/journal/weekly/*.md 0r ~/zettelkasten/.skeletons/weekly.md")
+vim.cmd("autocmd BufNewFile ~/zettelkasten/journal/daily/*.md 0r  ~/zettelkasten/.zk/templates/daily.md")
+vim.cmd("autocmd BufNewFile ~/zettelkasten/journal/weekly/*.md 0r ~/zettelkasten/.zk/templates/weekly.md")
