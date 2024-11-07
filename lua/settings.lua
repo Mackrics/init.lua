@@ -13,6 +13,12 @@ set.spell = true
 set.spelllang = 'en_us,sv'
 set.shell = 'mksh'
 set.shellcmdflag = '-ic'
+
+-- Themes ----------------------------------------------------------------------
+vim.cmd.colorscheme "catppuccin"
+vim.cmd('highlight ColorColumn ctermbg=black')
+vim.cmd('highlight CursorLine cterm=none ctermbg=none ctermfg=none guibg=none guifg=none')
+vim.cmd('highlight CursorLineNr guifg=#FAE3B0')
 vim.cmd('autocmd TermOpen * setlocal nonumber norelativenumber')
 
 -- Aliases ---------------------------------------------------------------------

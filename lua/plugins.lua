@@ -14,14 +14,10 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
 
   -- send stuff to terminal
-  --"mackrics/neoslime",
-  {
-  dir = "~/git-repos/neoslime", -- Your path
-  name = "neoslime",
-  config = function ()
-    require('neoslime')
-  end
-},
+  { --"mackrics/neoslime",
+    dir = "~/git-repos/neoslime",
+    name = "neoslime"
+  },
 
   -- syntax highlightning
   'nvim-treesitter/nvim-treesitter',

@@ -1,28 +1,23 @@
--- Key remaps ------------------------------------------------------------------
-require("keymaps")
-
--- Settings --------------------------------------------------------------------
-require("settings")
-
 -- Load plugins  ---------------------------------------------------------------
 require("plugins")
+
+-- Plugin configuration --------------------------------------------------------
+require("conf/lsp")
+require("conf/sessionmanager")
+require("conf/gitsigns")
+require("conf/neogit")
+require("conf/zk")
+require("conf/telescope")
+require("conf/treesitter")
+require("conf/lualine")
+require("conf/catppuccin")
+require("conf/luasnip")
 
 -- Load commands ---------------------------------------------------------------
 require("commands")
 
--- Load Configurations ---------------------------------------------------------
-require("telescope-conf")
-require("treesitter-conf")
-require("neogit-conf")
-require("sessionmanager-conf")
-require("gitsigns-conf")
-require("zk-conf")
-require("lsp-conf")
-require("config")
+-- Keymaps ---------------------------------------------------------------------
+require("keymaps")
 
--- Load snippets ---------------------------------------------------------------
-require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/snippets/"})
-
-require("neoslime").setup({
-  chosen_channel = nil
-})
+-- Settings --------------------------------------------------------------------
+require("settings")
