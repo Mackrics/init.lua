@@ -13,16 +13,13 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 
-  -- send stuff to terminal
-  { --"mackrics/neoslime",
-    dir = "~/git-repos/neoslime",
-    name = "neoslime"
-  },
+  -- Send stuff to terminal
+  "mackrics/neoslime",
 
-  -- syntax highlightning
+  -- Syntax highlighting
   'nvim-treesitter/nvim-treesitter',
 
-   -- dependency of a lot of packages
+   -- Dependency of a lot of packages
   "nvim-lua/plenary.nvim",
  
    -- File search
@@ -63,7 +60,7 @@ local plugins = {
    -- Autocomplete snippets
   "saadparwaiz1/cmp_luasnip",
 
-  -- git inline
+  -- Git inline
   "lewis6991/gitsigns.nvim",
 
   -- zettelkasten
