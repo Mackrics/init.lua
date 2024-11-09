@@ -13,8 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 
-  -- Send stuff to terminal
-  "mackrics/neoslime",
+  -- send stuff to terminal
+   "mackrics/neoslime",
 
   -- Syntax highlighting
   'nvim-treesitter/nvim-treesitter',

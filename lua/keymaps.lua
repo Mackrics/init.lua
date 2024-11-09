@@ -40,6 +40,12 @@ vim.keymap.set("n", "<C-k>", "{k")
 vim.keymap.set("n", "<C-j>", "}j")
 
 -- Commands --------------------------------------------------------------------
+vim.keymap.set("n", "<leader>s",  "<Cmd>NeoSlimeSendCell<Cr>")
+vim.keymap.set("n", "<leader>aa",  "<Cmd>NeoSlimeSendCellUpper<Cr>")
+vim.keymap.set("n", "<leader>as",  "<Cmd>NeoSlimeSendCellLower<Cr>")
+vim.keymap.set({"n", "i"}, "<C-h>", "<Cmd>NeoSlimeSendLine<Cr>")
+vim.keymap.set("v", "<C-h>",  ":'<,'> NeoSlimeSendVisualSelection<Cr>")
+vim.keymap.set({"n", "v"}, "<leader>e", "<Cmd>NeoSlimeEdit<Cr>")
 vim.keymap.set("n", "<leader>Gr", "<Cmd>GoRun<Cr>")
 vim.keymap.set("n", "<leader>Gb", "<Cmd>GoBuild<Cr>")
 vim.keymap.set("n", "<leader>qpp", "<Cmd>QuartoPreviewProject<Cr>")
