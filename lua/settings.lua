@@ -25,6 +25,6 @@ vim.cmd('autocmd TermOpen * setlocal nonumber norelativenumber')
 vim.cmd("let MYVIMRC = '~/.config/nvim/init.vim'")
 
 -- Skeletons -------------------------------------------------------------------
-vim.cmd("autocmd BufNewFile *.sh 0r ~/.config/nvim/.skeletons/skeleton.sh")
+vim.cmd("autocmd BufNewFile *.sh 0r ~/zettelkasten/.zk/templates/shell-script.sh")
 vim.cmd("autocmd BufNewFile ~/zettelkasten/journal/daily/*.md 0r  ~/zettelkasten/.zk/templates/daily.md")
 vim.cmd("autocmd BufNewFile ~/zettelkasten/journal/weekly/*.md 0r ~/zettelkasten/.zk/templates/weekly.md")

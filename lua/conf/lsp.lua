@@ -30,6 +30,16 @@ require('lspconfig').harper_ls.setup {
   }
 }
 
+require'lspconfig'.rust_analyzer.setup{
+  settings = {
+    ['rust-analyzer'] = {
+      diagnostics = {
+        enable = false;
+      }
+    }
+  }
+}
+
 vim.diagnostic.config {
   virtual_text = false,
 }
