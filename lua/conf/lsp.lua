@@ -40,6 +40,8 @@ require('lspconfig').rust_analyzer.setup{
   }
 }
 
+require'lspconfig'.openscad_lsp.setup{}
+
 vim.diagnostic.config {
   virtual_text = false,
 }
