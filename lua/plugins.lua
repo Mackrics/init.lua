@@ -21,7 +21,7 @@ local plugins = {
 
    -- Dependency of a lot of packages
   "nvim-lua/plenary.nvim",
- 
+
    -- File search
   "nvim-telescope/telescope.nvim",
  

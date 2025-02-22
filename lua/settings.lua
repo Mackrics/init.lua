@@ -11,8 +11,7 @@ set.cursorline = true
 set.scrolloff = 8
 set.spell = true
 set.spelllang = 'en_us,sv'
-set.shell = 'mksh'
-set.shellcmdflag = '-ic'
+set.shell = 'bash'
 
 -- Themes ----------------------------------------------------------------------
 vim.cmd.colorscheme "catppuccin"

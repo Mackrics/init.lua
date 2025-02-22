@@ -15,12 +15,12 @@ cmp.setup{
   }
 }
 
--- Languageserver --------------------------------------------------------------
-require('lspconfig').r_language_server.setup{
-  filetypes = {"r", "rmd", "quarto"}
-}
 
 require('lspconfig').zk.setup{}
+
+require('lspconfig').air.setup{
+  cmd = { "~/git-repos/air/target/debug/./air", "language-server" }
+}
 
 require('lspconfig').harper_ls.setup {
   settings = {
@@ -40,7 +40,7 @@ require('lspconfig').rust_analyzer.setup{
   }
 }
 
-require'lspconfig'.openscad_lsp.setup{}
+require('lspconfig').openscad_lsp.setup{}
 
 vim.diagnostic.config {
   virtual_text = false,
