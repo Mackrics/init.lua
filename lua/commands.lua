@@ -20,6 +20,7 @@ vim.cmd("command TypstCompile tabe % | terminal typst compile %")
 vim.cmd("command TypstWatch tabe % | terminal typst watch %")
 vim.cmd("command BufferDeleteAll %bd|e#")
 vim.cmd("command CleanWorkoutLog %s/\\d\\(\\.\\d\\|\\)$//")
+vim.cmd("command AirFormat !/home/mackrics/git-repos/air/target/debug/./air format %")
  
 function daily(path, extension)
     local daily = os.date('%Y-%m-%d') .. extension

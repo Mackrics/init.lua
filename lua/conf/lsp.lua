@@ -19,7 +19,7 @@ cmp.setup{
 require('lspconfig').zk.setup{}
 
 require('lspconfig').air.setup{
-  cmd = { "~/git-repos/air/target/debug/./air", "language-server" }
+  cmd = { "/home/mackrics/git-repos/air/target/debug/./air", "language-server" }
 }
 
 require('lspconfig').harper_ls.setup {
